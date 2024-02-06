@@ -19,7 +19,6 @@ export class NotifyService {
 			Phone: ${dto.phone}`
 		}
 
-		if (dto.orderPrice) {
 			if (dto.orderPrice) {
 				let goodsList = ''
 				if (dto.goods.length > 0) {
@@ -38,10 +37,10 @@ export class NotifyService {
 			Delivery: ${dto.delivery}
 			OrderPrice: ${dto.orderPrice}
 			Goods: ${goodsList}`;
-			}
+		}
+		
 			return await this.botUpdate.sendMessage(message);
 		}
-	}
 
 	
 

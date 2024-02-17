@@ -27,6 +27,7 @@ export class NotifyService {
 			
 				message =
 					`✅Received new order🛒:
+			OrderNum: ${dto.orderNum}
 
 			FirstName: ${dto.firstName}
 			LastName: ${dto.lastName}

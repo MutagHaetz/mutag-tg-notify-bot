@@ -1,4 +1,5 @@
 export interface NotificationDto {
+	orderNum?: number 
 	name?: string
 	firstName?: string
 	lastName?: string
